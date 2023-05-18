@@ -6,14 +6,14 @@ parameters:
       type: boolean
 get:
   tags:
-    - User
-  summary: Get user by user name
+    - products
+  summary: Get products by products name
   description: |
     Some description of the operation.
     You can use `Markdown` here.
   operationId: getUserByName
   parameters:
-    - name: username
+    - name: products
       in: path
       description: The name that needs to be fetched
       required: true
@@ -24,31 +24,28 @@ get:
       description: Filter users without email
       schema:
         type: boolean
-  security:
-    - main_auth:
-        - read:users
-    - api_key: []
+
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/User.yaml
+            $ref: ../components/schemas/products.yaml
           example:
             username: user1
-            email: user@example.com
+            email: products@example.com
     '403':
       description: Forbidden
       $ref: ../components/responses/Problem.yaml
     '404':
-      description: User not found
+      description: products not found
       $ref: ../components/responses/Problem.yaml
 put:
   tags:
-    - User
-  summary: Updated user
-  description: This can only be done by the logged in user.
+    - products
+  summary: Updated products
+  description: This can only be done by the logged in products.
   operationId: updateUser
   parameters:
     - name: username
@@ -64,18 +61,18 @@ put:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/User.yaml
+          $ref: ../components/schemas/products.yaml
       application/xml:
         schema:
-          $ref: ../components/schemas/User.yaml
-    description: Updated user object
+          $ref: ../components/schemas/products.yaml
+    description: Updated products object
     required: true
   responses:
     '200':
       description: OK
     '400':
-      description: Invalid user supplied
+      description: Invalid products supplied
       $ref: ../components/responses/Problem.yaml
     '404':
-      description: User not found
+      description: products not found
       $ref: ../components/responses/Problem.yaml
