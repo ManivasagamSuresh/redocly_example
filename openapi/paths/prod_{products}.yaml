@@ -25,7 +25,7 @@ get:
       schema:
         type: boolean
   security:
-    - main_auth1:
+    - main_auth:
         - read:products
   responses:
     '200':
@@ -58,7 +58,7 @@ put:
         type: string
   security:
     - main_auth:
-        - write:users
+        - write:products
   requestBody:
     content:
       application/json:
