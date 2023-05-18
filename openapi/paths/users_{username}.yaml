@@ -24,7 +24,10 @@ get:
       description: Filter users without email
       schema:
         type: boolean
-  
+  security:
+    - main_auth:
+        - read:products
+    - api_key: []
   responses:
     '200':
       description: Success

@@ -24,7 +24,9 @@ get:
       description: Filter users without email
       schema:
         type: boolean
-
+  security:
+    - main_auth1:
+        - read:products
   responses:
     '200':
       description: Success
