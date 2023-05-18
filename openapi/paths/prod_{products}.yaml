@@ -11,7 +11,7 @@ get:
   description: |
     Some description of the operation.
     You can use `Markdown` here.
-  operationId: getUserByName
+  operationId: getProdutcsByName
   parameters:
     - name: products
       in: path
@@ -48,7 +48,7 @@ put:
   description: This can only be done by the logged in products.
   operationId: updateUser
   parameters:
-    - name: username
+    - name: products
       in: path
       description: The name that needs to be updated
       required: true
