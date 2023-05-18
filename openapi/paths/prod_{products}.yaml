@@ -46,7 +46,7 @@ put:
     - products
   summary: Updated products
   description: This can only be done by the logged in products.
-  operationId: updateUser
+  operationId: updateProducts
   parameters:
     - name: products
       in: path
