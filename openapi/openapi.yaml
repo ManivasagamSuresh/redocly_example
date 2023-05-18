@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Example.com
+  title: TBD Example
   termsOfService: https://example.com/terms/
   contact:
     email: contact@example.com
@@ -10,7 +10,7 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   x-logo:
-    url: https://redocly.github.io/openapi-template/logo.png
+    url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSNuqXI12X7mlWWvPXwP2LTZHLD5r5Nu8Dw&usqp=CAU
   description: >
     This is an **example** API to demonstrate features of the OpenAPI
     specification.
