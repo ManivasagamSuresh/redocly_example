@@ -55,6 +55,8 @@ servers:
 paths:
   /users/{username}:
     $ref: paths/users_{username}.yaml
+    /prod/{products}:
+    $ref: paths/prod_{products}.yaml
   /echo:
     $ref: paths/echo.yaml
   /pathItem:
